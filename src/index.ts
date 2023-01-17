@@ -1,6 +1,7 @@
 // imports
 import * as express from 'express';
 import {articlesRouter} from './routes/articlesRouter'
+import { commentsRouter } from './routes/commentsRouter';
 import { usersRouter } from './routes/usersRouter';
 
 // Express server creation
@@ -29,6 +30,7 @@ app.use((req, res, next) => {
 // Routes
 app.use('/api/articles', articlesRouter);
 app.use('/api/users', usersRouter);
+app.use('/api/comments', commentsRouter);
 app.use('/*', (req, res) => {
     res.status(404).json({
         status: 'FAIL',
