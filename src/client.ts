@@ -1,8 +1,8 @@
+// Imports
 import { Client } from "pg";
 import * as dotenv from 'dotenv';
-dotenv.config({ path: '.env' });
-//require('dotenv').config();
 
+dotenv.config({ path: '.env' });
 
 
 export const client = new Client({

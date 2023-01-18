@@ -37,7 +37,7 @@ app.use('/*', (req, res) => {
         message: "Ce nom de domaine n'existe pas",
         data: null
     })
-})
+});
 
 // Bind express server on port 8000
 app.listen(port, () => {

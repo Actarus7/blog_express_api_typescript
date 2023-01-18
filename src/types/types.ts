@@ -1,3 +1,4 @@
+// Imports
 import { JwtPayload } from "jsonwebtoken";
 
 export interface RequestWithUserRole extends Request
